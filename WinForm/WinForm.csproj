@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F7D25AE7-A868-4A27-80CE-594A56194A36}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinForm</RootNamespace>
+    <AssemblyName>WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Additional Clases\TestWord.cs" />
+    <Compile Include="Additional Clases\WordToTestWord.cs" />
+    <Compile Include="Additional Clases\WordsActions.cs" />
+    <Compile Include="FormDesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesktop.Designer.cs">
+      <DependentUpon>FormDesktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSetEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSetEdit.Designer.cs">
+      <DependentUpon>FormSetEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSetLearn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSetLearn.Designer.cs">
+      <DependentUpon>FormSetLearn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAdd.Designer.cs">
+      <DependentUpon>FormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSetMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSetMatch.Designer.cs">
+      <DependentUpon>FormSetMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSet.Designer.cs">
+      <DependentUpon>FormSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTest.Designer.cs">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTestMultipleChoises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTestMultipleChoises.Designer.cs">
+      <DependentUpon>FormTestMultipleChoises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTestResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTestResults.Designer.cs">
+      <DependentUpon>FormTestResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTestTrueFalse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTestTrueFalse.Designer.cs">
+      <DependentUpon>FormTestTrueFalse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTestWritten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTestWritten.Designer.cs">
+      <DependentUpon>FormTestWritten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UserControlDefinitionMatch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlDefinitionMatch.Designer.cs">
+      <DependentUpon>UserControlDefinitionMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlMatchItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlMatchItem.Designer.cs">
+      <DependentUpon>UserControlMatchItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlResultsWord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlResultsWord.Designer.cs">
+      <DependentUpon>UserControlResultsWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSetChoose.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlSetChoose.Designer.cs">
+      <DependentUpon>UserControlSetChoose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSetDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlSetDisplay.Designer.cs">
+      <DependentUpon>UserControlSetDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlWordDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlWordDisplay.Designer.cs">
+      <DependentUpon>UserControlWordDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlWordField.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlWordField.Designer.cs">
+      <DependentUpon>UserControlWordField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlTermMatch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlTermMatch.Designer.cs">
+      <DependentUpon>UserControlTermMatch.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormDesktop.resx">
+      <DependentUpon>FormDesktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAdd.resx">
+      <DependentUpon>FormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSet.resx">
+      <DependentUpon>FormSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSetEdit.resx">
+      <DependentUpon>FormSetEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSetLearn.resx">
+      <DependentUpon>FormSetLearn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSetMatch.resx">
+      <DependentUpon>FormSetMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTest.resx">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTestMultipleChoises.resx">
+      <DependentUpon>FormTestMultipleChoises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTestResults.resx">
+      <DependentUpon>FormTestResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTestTrueFalse.resx">
+      <DependentUpon>FormTestTrueFalse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTestWritten.resx">
+      <DependentUpon>FormTestWritten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\UserControlDefinitionMatch.resx">
+      <DependentUpon>UserControlDefinitionMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlMatchItem.resx">
+      <DependentUpon>UserControlMatchItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlResultsWord.resx">
+      <DependentUpon>UserControlResultsWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlSetChoose.resx">
+      <DependentUpon>UserControlSetChoose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlSetDisplay.resx">
+      <DependentUpon>UserControlSetDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlWordDisplay.resx">
+      <DependentUpon>UserControlWordDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlWordField.resx">
+      <DependentUpon>UserControlWordField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlTermMatch.resx">
+      <DependentUpon>UserControlTermMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\Business.csproj">
+      <Project>{de2a4278-c609-4823-8197-b121c2de8039}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLDataAccessor\SQLDataAccessor.csproj">
+      <Project>{edad3a33-4d8a-44ec-a062-0113536efa72}</Project>
+      <Name>SQLDataAccessor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_+_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stars_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quiz_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_filled_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_filled_42px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_20px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
